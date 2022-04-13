@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/ofir-dahan-07-04-2022/static/css/main.93ee1420.css",
+    "main.js": "/ofir-dahan-07-04-2022/static/js/main.324f799b.js",
+    "static/js/787.25979c61.chunk.js": "/ofir-dahan-07-04-2022/static/js/787.25979c61.chunk.js",
+    "static/media/Inter-Medium.woff": "/ofir-dahan-07-04-2022/static/media/Inter-Medium.9053572c46aeb4b16caa.woff",
+    "static/media/Inter-Black.woff": "/ofir-dahan-07-04-2022/static/media/Inter-Black.c6938660eec019fefd68.woff",
+    "static/media/Inter-Regular.woff": "/ofir-dahan-07-04-2022/static/media/Inter-Regular.8c206db99195777c6769.woff",
+    "static/media/Inter-Medium.woff2": "/ofir-dahan-07-04-2022/static/media/Inter-Medium.293fd13dbca5a3e450ef.woff2",
+    "static/media/menu_moblie.svg": "/ofir-dahan-07-04-2022/static/media/menu_moblie.8bf7ab0d239eafb478a0d8565fcc1dff.svg",
+    "index.html": "/ofir-dahan-07-04-2022/index.html",
+    "main.93ee1420.css.map": "/ofir-dahan-07-04-2022/static/css/main.93ee1420.css.map",
+    "main.324f799b.js.map": "/ofir-dahan-07-04-2022/static/js/main.324f799b.js.map",
+    "787.25979c61.chunk.js.map": "/ofir-dahan-07-04-2022/static/js/787.25979c61.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93ee1420.css",
+    "static/js/main.324f799b.js"
+  ]
+}
