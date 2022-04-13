@@ -2,21 +2,23 @@ import Axios from "../../axios.js";
 import { API_KEY } from "../../confing.js";
 import { setSmallNumZero } from "../../utils/utils.js";
 
-export const loadWeeklyForecast = (key, cityName) => async (dispatch) => {
-  try {
-    const data = await Axios({
-      url: `forecasts/v1/daily/5day/${key}?apikey=${API_KEY}&metric=true`,
-      method: "GET",
-    });
+export const loadWeeklyForecast =
+  (key = "215854", cityName = "Tel Aviv") =>
+  async (dispatch) => {
+    try {
+      const data = await Axios({
+        url: `forecasts/v1/daily/5day/${key}?apikey=${API_KEY}&metric=true`,
+        method: "GET",
+      });
 
-    dispatch({
-      type: "SET_WEEKLY_FORECAST",
-      payload: { data: data.DailyForecasts, key: key, cityName: cityName },
-    });
-  } catch (error) {
-    console.log(error);
-  }
-};
+      dispatch({
+        type: "SET_WEEKLY_FORECAST",
+        payload: { data: data.DailyForecasts, key: key, cityName: cityName },
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
 export const toggleFavoriteAction = (isFavorite) => {
   return {
     type: "ADD_TO_FAVORITES",

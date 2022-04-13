@@ -17,8 +17,10 @@ export const HomePage = () => {
     const { cityKey, cityName } = getParams();
     if (!cityKey && !cityName) {
       navigate("/ofir-dahan-07-04-2022?key=215854&cityName=Tel Aviv");
+      setDispatch();
+    } else {
+      setDispatch(cityKey, cityName);
     }
-    setDispatch(cityKey, cityName);
   }, []);
 
   const getParams = () => {
