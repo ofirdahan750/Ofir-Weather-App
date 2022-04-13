@@ -1,0 +1,6 @@
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: calc(100% - 10vh * 2);
+}

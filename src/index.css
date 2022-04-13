@@ -1,13 +1,68 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/* Vendor */
+@import url("./style/vendor/normalize.css");
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+/* Font Rule */
+@import url("./style/fonts/inter/inter.css");
+
+/* Keyframe */
+@import url("./style/keyframe/keyframe.css");
+
+/* Global Rules */
+@import url("./style/global-rules/global-rules.css");
+
+/* Modifiers */
+@import url("./style/modifier/button_modifier/button_modifier.css"); /* Button */
+@import url("./style/modifier/link_modifier/link_modifier.css"); /* Link */
+
+/* Webkit */
+@import url("./style/webkits/webkit_scrollbar/webkit_scrollbar.css"); /* Button */
+
+/* Page */
+@import url("./style/blocks/page/page.css");
+@import url("./style/blocks/page/page__content/__content.css/page__content.css");
+
+/* Header */
+@import url("./style/blocks/header/header.css");
+@import url("./style/blocks/header/__wrapper/header__wrapper.css");
+@import url("./style/blocks/header/_logo/header__logo.css");
+
+/* Navbar Moblie */
+@import url("./style/blocks/navbar/navbar.css");
+/* Navbar Moblie */
+
+@import url("./style/blocks/navbar/_type/_moblie/navbar_type_moblie.css");
+@import url("./style/blocks/navbar/_visible/navbar_visible.css");
+@import url("./style/blocks/navbar/__container/navbar__container.css");
+@import url("./style/blocks/navbar/__wrapper/navbar__wrapper.css");
+/* @import url("./style/blocks/navbar/_type/_moblie/navbar_type_moblie.css"); */
+
+/* Navbar Desktop */
+@import url("./style/blocks/navbar/_type/_desktop/navbar_type_desktop.css");
+@import url("./style/blocks/navbar/__link/navbar__link.css");
+@import url("./style/blocks/navbar/__link/_type/_desktop/navbar__link_type_desktop.css");
+
+/* Main */
+@import url("./style/blocks/main/main.css");
+
+/* Forecast */
+@import url("./style/blocks/forecast/forecast.css");
+@import url("./style/blocks/forecast/__list/forecast__list.css");
+@import url("./style/blocks/forecast/__card/forecast__card.css");
+@import url("./style/blocks/forecast/__sky-image/forecast__sky-image.css");
+@import url("./style/blocks/forecast/__degrees/forecast__degrees.css");
+@import url("./style/blocks/forecast/__location/forecast__location.css");
+@import url("./style/blocks/forecast/__day/forecast__day.css");
+@import url("./style/blocks/forecast/__weather-text/forecast__weather-text.css");
+@import url("./style/blocks/forecast/__empty-list/forecast__empty-list.css");
+
+/* Forecast Header */
+@import url("./style/blocks/forecast/__header/forecast__header.css");
+@import url("./style/blocks/forecast/__favorite-btn-icon/__favorite-btn-icon.css");
+
+/* Search */
+@import url("./style/blocks/search/search.css");
+@import url("./style/blocks/search/__input/search__input.css");
+
+/* Footer */
+@import url("./style/blocks/footer/footer.css");
+@import url("./style/blocks/footer/__text/footer__text.css");

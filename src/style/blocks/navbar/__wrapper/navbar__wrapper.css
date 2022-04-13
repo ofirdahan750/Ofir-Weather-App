@@ -1,0 +1,14 @@
+.navbar__wrapper {
+  max-width: 358px;
+  margin: 34px 36px 36.51px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 461px) {
+  .navbar__wrapper {
+    max-width: 238px;
+    margin: 25px 22px;
+  }
+}
+
+

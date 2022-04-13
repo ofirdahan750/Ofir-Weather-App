@@ -1,0 +1,11 @@
+.forecast__favorite-btn-icon {
+  font-size: 2rem;
+  opacity: 0.7;
+}
+
+.forecast__favorite-btn-icon:hover {
+  opacity: 1;
+  animation: heartbeat 1.5s linear infinite both;
+  transform: scale(1.9);
+  cursor: pointer;
+}

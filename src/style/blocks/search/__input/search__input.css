@@ -1,0 +1,9 @@
+.search__input {
+  padding: 0.5rem;
+  border-radius: 0 !important;
+  background-color: rgba(42, 55, 128, 0.856);
+  color: rgba(255, 255, 255, 0.715);
+  border: 2px solid whitesmoke;
+  min-width: 250px;
+  margin: 0 auto 30px 30px;
+}

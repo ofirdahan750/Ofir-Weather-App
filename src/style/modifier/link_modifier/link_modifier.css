@@ -1,0 +1,7 @@
+.link_modifier {
+  all: unset;
+  cursor: pointer;
+}
+.link_modifier:hover:visited:focus:link:active {
+  text-decoration: none;
+}

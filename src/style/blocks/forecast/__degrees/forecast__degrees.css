@@ -1,0 +1,29 @@
+.forecast__degrees {
+  padding: 0;
+  margin: 0;
+  grid-area: 1 / 2 / 2 / 3;
+  font-weight: 500;
+  font-size: 2.2rem;
+  line-height: 1.365384615384615;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #caf7ff;
+  justify-self: center;
+}
+.forecast__degrees::after {
+  content: "\00b0";
+}
+
+@media screen and (max-width: 916px) {
+  .forecast__degrees {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .forecast__degrees {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,12 @@
+.forecast__sky-image {
+  grid-area: 1 / 1 / 2 / 2;
+  object-fit: cover;
+  justify-self: right;
+  align-self: center;
+  width: 120px;
+}
+@media screen and (max-width: 1450px) {
+  .forecast__sky-image {
+    width: 90px;
+  }
+}

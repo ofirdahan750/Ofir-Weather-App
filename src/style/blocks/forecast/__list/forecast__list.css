@@ -1,0 +1,7 @@
+.forecast__list {
+  /* animation: scale-up-center 0.355s linear both; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(291px, 1fr));
+
+  gap: 1rem;
+}

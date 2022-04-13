@@ -1,0 +1,19 @@
+.navbar__link_type_desktop {
+  /* text-transform: uppercase;
+  padding: 15px;
+  font-size: 1rem;
+  color: rgba(41, 149, 243, 0.856);
+  font-weight: 600;
+  line-height: 1.14285714;
+  margin: 15px; */
+}
+.navbar__link_type_desktop:hover {
+  /* box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.15);
+  color: rgba(84, 162, 230, 0.834);
+  font-weight: 900;
+  padding: 15px;
+  background-color: rgba(29, 167, 221, 0.2);
+  transition: background-color 0.25s linear;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px; */
+}

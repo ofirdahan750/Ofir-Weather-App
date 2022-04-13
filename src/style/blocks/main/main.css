@@ -1,0 +1,5 @@
+.main {
+  height: 100vh;
+  margin: 0 auto;
+  max-width: calc(100% - 5vw);
+}
