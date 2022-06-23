@@ -1,20 +1,20 @@
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { useNavigate, useSearchParams } from "react-router-dom";
-import { loadWeeklyForecast } from "../store/actions/forcastActions.js";
-import { ForecastList } from "../components/ForecastList/ForecastList.js";
-import { AppSearch } from "../components/AppSearch/AppSearch.js";
-import { ForecastHeader } from "../components/ForecastHeader/ForecastHeader.js";
+import React, {useEffect} from "react";
+import {useDispatch, useSelector} from "react-redux";
+import {useNavigate, useSearchParams} from "react-router-dom";
+import {loadWeeklyForecast} from "../store/actions/forcastActions.js";
+import {ForecastList} from "../components/ForecastList/ForecastList.js";
+import {AppSearch} from "../components/AppSearch/AppSearch.js";
+import {ForecastHeader} from "../components/ForecastHeader/ForecastHeader.js";
 
 export const HomePage = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const [params] = useSearchParams();
 
-  const { weeklyForecast } = useSelector((state) => state.forecastModule);
+  const {weeklyForecast} = useSelector((state) => state.forecastModule);
 
   useEffect(() => {
-    const { cityKey, cityName } = getParams();
+    const {cityKey, cityName} = getParams();
     if (!cityKey && !cityName) {
       navigate("/ofir-dahan-07-04-2022?key=215854&cityName=Tel Aviv");
       setDispatch();
@@ -24,7 +24,7 @@ export const HomePage = () => {
   }, []);
 
   const getParams = () => {
-    return { cityKey: params.get("key"), cityName: params.get("cityName") };
+    return {cityKey: params.get("key"), cityName: params.get("cityName")};
   };
   const setDispatch = (cityKey, cityName) => {
     dispatch(loadWeeklyForecast(cityKey, cityName));

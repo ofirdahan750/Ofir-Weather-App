@@ -1,14 +1,14 @@
-import { setSmallNumZero, getNameDay } from "../utils/utils.js";
+import {setSmallNumZero, getNameDay} from "../utils/utils.js";
 
 export const setWeeklyForecastArr = (array, state, key) => {
   return array.map((item) => {
-    const { Temperature, Day } = item;
+    const {Temperature, Day} = item;
     return {
       day: getNameDay(item.Date),
       temperature: Temperature.Minimum.Value.toFixed(),
       key: key ? key : state.cityKey,
       weatherText: Day.IconPhrase,
-      iconNumber: setSmallNumZero(Day.Icon),
+      iconNumber: setSmallNumZero(Day.Icon)
     };
   });
 };
@@ -21,7 +21,7 @@ export const updateFavorite = (state, isFavorite) => {
   } else {
     newFavorites = [
       ...state.favoritesKeys,
-      { ...state.currentDay, cityName: state.currentCityName },
+      {...state.currentDay, cityName: state.currentCityName}
     ];
   }
 

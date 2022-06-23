@@ -1,11 +1,11 @@
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { ForecastList } from "../components/ForecastList/ForecastList";
-import { loadFavoritesForecast } from "../store/actions/forcastActions.js";
+import {useEffect} from "react";
+import {useDispatch, useSelector} from "react-redux";
+import {ForecastList} from "../components/ForecastList/ForecastList";
+import {loadFavoritesForecast} from "../store/actions/forcastActions.js";
 
 export const FavoritesPage = () => {
   const dispatch = useDispatch();
-  const { favoritesKeys, favorites } = useSelector(
+  const {favoritesKeys, favorites} = useSelector(
     (state) => state.forecastModule
   );
   useEffect(() => {

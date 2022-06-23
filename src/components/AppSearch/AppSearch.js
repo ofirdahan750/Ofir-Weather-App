@@ -1,15 +1,15 @@
-import { useState } from "react";
+import {useState} from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
-import { API_KEY } from "../../confing.js";
+import {useNavigate} from "react-router-dom";
+import {API_KEY} from "../../confing.js";
 
-export const AppSearch = ({ setDispatch }) => {
+export const AppSearch = ({setDispatch}) => {
   let cancelToken;
   const [list, setList] = useState([]);
   const navigate = useNavigate();
 
   const onSearch = async (event) => {
-    const { value } = event.target;
+    const {value} = event.target;
     if (value === "") {
       return;
     }
@@ -33,7 +33,7 @@ export const AppSearch = ({ setDispatch }) => {
         {
           cancelToken: cancelToken.token,
           timeout: 1000,
-          headers: {},
+          headers: {}
         }
       );
 

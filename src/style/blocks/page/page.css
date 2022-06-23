@@ -1,8 +1,7 @@
 .page {
-    font-family: "Inter", Arial, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    color: #ffffff;
-    background: linear-gradient(0deg, #0f284c, #0f284c), #ffffff;
-  }
-  
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #ffffff;
+  background: linear-gradient(0deg, #0f284c, #0f284c), #ffffff;
+}

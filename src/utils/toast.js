@@ -1,7 +1,7 @@
-import { toast } from "react-toastify";
+import {toast} from "react-toastify";
 
 export const errorToast = (message) => {
   toast(message, {
-    type: toast.TYPE.ERROR,
+    type: toast.TYPE.ERROR
   });
 };

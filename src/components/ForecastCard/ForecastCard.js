@@ -1,6 +1,6 @@
 import React from "react";
 
-export const ForecastCard = ({ dayInfo }) => {
+export const ForecastCard = ({dayInfo}) => {
   return (
     <article className="forecast__card">
       <img

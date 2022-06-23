@@ -1,13 +1,13 @@
 import axios from "axios";
-import { errorToast } from "./utils/toast";
+import {errorToast} from "./utils/toast";
 
 const Axios = axios.create({
   baseURL: "http://dataservice.accuweather.com/",
   withCredentials: false,
   headers: {
     Accept: "application/json",
-    "Content-Type": "application/json",
-  },
+    "Content-Type": "application/json"
+  }
 });
 
 Axios.interceptors.request.use(

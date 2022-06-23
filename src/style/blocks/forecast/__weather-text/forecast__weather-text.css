@@ -9,7 +9,7 @@
   text-shadow: 0px 12.6923px 21.1538px rgba(31, 36, 75, 0.25);
 }
 @media screen and (max-width: 916px) {
-  .forcast__weather-text{
+  .forcast__weather-text {
     font-size: 1.1375rem;
   }
 }

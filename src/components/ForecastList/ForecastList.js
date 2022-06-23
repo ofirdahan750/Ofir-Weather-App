@@ -1,7 +1,7 @@
 import React from "react";
-import { ForecastCard } from "../ForecastCard/ForecastCard.js";
+import {ForecastCard} from "../ForecastCard/ForecastCard.js";
 
-export const ForecastList = ({ arrayData }) => {
+export const ForecastList = ({arrayData}) => {
   return (
     <div className="forecast__list">
       {arrayData.map((item, idx) => (

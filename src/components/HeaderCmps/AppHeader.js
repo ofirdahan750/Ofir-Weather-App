@@ -1,9 +1,9 @@
-import { AppNavHeaderDesktop } from "./AppNavHeader/AppNavHeaderDesktop.js";
-import { AppNavHeaderMoblie } from "./AppNavHeader/AppNavHeaderMoblie.js";
+import {AppNavHeaderDesktop} from "./AppNavHeader/AppNavHeaderDesktop.js";
+import {AppNavHeaderMoblie} from "./AppNavHeader/AppNavHeaderMoblie.js";
 import appLogo from "../../images/header/logo/header_logo.png";
 import moblieMenu from "../../images/header/menu_moblie.svg";
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import React, {useEffect, useState} from "react";
+import {Link} from "react-router-dom";
 
 export const AppHeader = () => {
   const [width, setWidth] = useState(window.innerWidth);

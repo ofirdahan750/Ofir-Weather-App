@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { toggleFavoriteAction } from "../../store/actions/forcastActions.js";
+import React, {useEffect} from "react";
+import {useDispatch, useSelector} from "react-redux";
+import {toggleFavoriteAction} from "../../store/actions/forcastActions.js";
 
-import { BsFillHeartFill } from "react-icons/bs";
-export const ForecastHeader = ({ currentDay: { day, temperature } }) => {
-  const { currentCityName, favoritesKeys } = useSelector(
+import {BsFillHeartFill} from "react-icons/bs";
+export const ForecastHeader = ({currentDay: {day, temperature}}) => {
+  const {currentCityName, favoritesKeys} = useSelector(
     (state) => state.forecastModule
   );
 

@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 export const AppNavHeaderMoblie = ({
   setVisibleClass,
   handleCloseMoblieMenu,
-  handlePopupMouseDown,
+  handlePopupMouseDown
 }) => {
   return (
     <nav
