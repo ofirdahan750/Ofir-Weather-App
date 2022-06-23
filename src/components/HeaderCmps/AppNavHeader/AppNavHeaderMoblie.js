@@ -14,14 +14,14 @@ export const AppNavHeaderMoblie = ({
       <div className="navbar__container">
         <div className="navbar__wrapper">
           <Link
-            to="/ofir-dahan-07-04-2022?key=215854&cityName=Tel Aviv"
+            to="/Ofir-Weather-App?key=215854&cityName=Tel Aviv"
             className="navbar__link navbar__link_type_moblie link_modifier"
             onClick={handleCloseMoblieMenu}
           >
             Home
           </Link>
           <Link
-            to="/ofir-dahan-07-04-2022/favorites"
+            to="/Ofir-Weather-App/favorites"
             className="navbar__link navbar__link_type_moblie link_modifier"
             onClick={handleCloseMoblieMenu}
           >

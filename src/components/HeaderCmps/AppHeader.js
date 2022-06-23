@@ -44,7 +44,7 @@ export const AppHeader = () => {
     <header className="header">
       <div className="header__wrapper">
         <Link
-          to="/ofir-dahan-07-04-2022?key=215854&cityName=Tel Aviv"
+          to="/Ofir-Weather-App?key=215854&cityName=Tel Aviv"
           className="header__logo link_modifier"
         >
           <img
