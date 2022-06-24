@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Ofir-Weather-App/static/css/main.72c9faae.css",
-    "main.js": "/Ofir-Weather-App/static/js/main.4489e652.js",
+    "main.js": "/Ofir-Weather-App/static/js/main.af720212.js",
     "static/js/787.25979c61.chunk.js": "/Ofir-Weather-App/static/js/787.25979c61.chunk.js",
     "static/media/Inter-Medium.woff": "/Ofir-Weather-App/static/media/Inter-Medium.9053572c46aeb4b16caa.woff",
     "static/media/Inter-Black.woff": "/Ofir-Weather-App/static/media/Inter-Black.c6938660eec019fefd68.woff",
@@ -10,11 +10,11 @@
     "static/media/menu_moblie.svg": "/Ofir-Weather-App/static/media/menu_moblie.ec7185d5b88694c96dd23627a99eda5a.svg",
     "index.html": "/Ofir-Weather-App/index.html",
     "main.72c9faae.css.map": "/Ofir-Weather-App/static/css/main.72c9faae.css.map",
-    "main.4489e652.js.map": "/Ofir-Weather-App/static/js/main.4489e652.js.map",
+    "main.af720212.js.map": "/Ofir-Weather-App/static/js/main.af720212.js.map",
     "787.25979c61.chunk.js.map": "/Ofir-Weather-App/static/js/787.25979c61.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.72c9faae.css",
-    "static/js/main.4489e652.js"
+    "static/js/main.af720212.js"
   ]
 }
