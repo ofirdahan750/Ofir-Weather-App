@@ -26,7 +26,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "push": "git add . && git commit -m \"Fixing git page\" && git push",
+    "push": "git add . && git commit -m \"Fixing route issue of slash \" && git push",
     "fullpush": "npm run push && npm run deploy"
   },
   "eslintConfig": {
