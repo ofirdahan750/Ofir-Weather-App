@@ -1,42 +1,34 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import axios from "axios";
 import {useNavigate} from "react-router-dom";
 import {API_KEY} from "../../confing.js";
 
 export const AppSearch = ({setDispatch}) => {
-  let cancelToken;
+  const [inputVal, setInputVal] = useState("");
   const [list, setList] = useState([]);
   const navigate = useNavigate();
 
-  const onSearch = async (event) => {
-    const {value} = event.target;
-    if (value === "") {
-      return;
+  useEffect(() => {
+    if (inputVal) {
+      onSearch();
     }
+  }, [inputVal]);
 
-    if (typeof cancelToken != typeof undefined) {
-      cancelToken.cancel("Operation canceled due to new request.");
-    }
-
-    const city = list.find((city) => city.LocalizedName === value);
+  const onSearch = async () => {
+    const city = list.find((city) => city.LocalizedName === inputVal);
     if (city) {
       navigate(`?key=${city.Key}&cityName=${city.LocalizedName}`);
       setDispatch(city.Key, city.LocalizedName);
       return;
     }
 
-    cancelToken = axios.CancelToken.source();
-
     try {
       const results = await axios.get(
-        `http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=${API_KEY}&q=${value}`,
+        `http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=${API_KEY}&q=${inputVal}`,
         {
-          cancelToken: cancelToken.token,
-          timeout: 1000,
           headers: {}
         }
       );
-
       setList(results.data);
     } catch (error) {
       console.log(error);
@@ -49,8 +41,11 @@ export const AppSearch = ({setDispatch}) => {
         type="search"
         placeholder="Search..."
         list="data"
+        value={inputVal}
         className="search__input"
-        onInput={(e) => onSearch(e)}
+        onChange={(e) => {
+          setInputVal(e.target.value);
+        }}
       />
       <datalist id="data">
         {list.map((item, index) => (

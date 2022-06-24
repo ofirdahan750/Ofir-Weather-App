@@ -16,7 +16,7 @@ export const App = () => {
         <AppHeader />
         <main className="main">
           <Routes>
-         <Route path="/" element={<Navigate to ="/Ofir-Weather-App" />}/>
+            <Route path="/" element={<Navigate to="/Ofir-Weather-App" />} />
             <Route path="/Ofir-Weather-App" element={<HomePage />} />
             <Route
               path="/Ofir-Weather-App/favorites"
