@@ -1,7 +1,9 @@
 export const AppFooter = () => {
   return (
     <footer className="footer">
-      <p className="footer__text">2022 Herolo Weather App</p>
+      <p className="footer__text">
+        {new Date().getFullYear()} Ofir Weather App
+      </p>
     </footer>
   );
 };

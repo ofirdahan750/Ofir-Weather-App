@@ -48,7 +48,7 @@ export const AppHeader = () => {
           className="header__logo link_modifier"
         >
           <img
-            alt="Herolo Weather App Logo"
+            alt="Ofir Weather App Logo"
             width={110}
             height={110}
             src={appLogo}
